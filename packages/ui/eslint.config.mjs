@@ -1,4 +1,8 @@
-import { config } from "@repo/eslint-config/react-internal";
+import { config as reactInternalConfig } from "@repo/eslint-config/react-internal";
+import { shadcnConfig } from "@repo/eslint-config/shadcn";
+import { defineConfig } from "eslint/config";
 
-/** @type {import("eslint").Linter.Config} */
-export default config;
+export default defineConfig([
+  ...reactInternalConfig,
+  ...shadcnConfig,
+]);

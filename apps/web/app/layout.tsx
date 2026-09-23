@@ -12,7 +12,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased font-sans")}
+      className={cn("font-sans antialiased")}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>
